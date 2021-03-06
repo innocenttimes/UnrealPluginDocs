@@ -1,6 +1,35 @@
 # AppsFlyer
 
+## How to use
+
+* Init SDK
+
+init appsflyer should be after game init and as early as possible.
+`setListener` should be called before `init`.
+
+* Start AppsFlyer
+
+you can `start` appsflyer at any time. but i suggest you as early as possible.
+`setAppID`, `setDevKey`, `setDebug`, `setCustomerUserID` should be called before `start`.
+
+* LogEvent/Other
+
+you can call appsflyer(e.g. `logEvent`, `validateAndLogInAppPurchase` or other methods) at any time in your game.
+
+* Stop
+
+generally, you needn't call this. but if you want to stop appsflyer, you use this api.
+
+
+## AppsFlyer Offical Document
+
+AppsFlyer iOS Document: https://support.appsflyer.com/hc/en-us/articles/207032066-iOS-SDK-V6-X-integration-guide-for-developers#introduction
+
+AppsFlyer Android Document: https://support.appsflyer.com/hc/en-us/articles/207032126-Android-SDK-integration-for-developers
+
 ## API
+
+The api name of our plug-in is translated with appsflyer in blueprint.
 
 ```cpp
 static void init();
